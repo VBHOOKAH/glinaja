@@ -587,10 +587,10 @@ body {
     overflow: hidden;
 }
 .nav-button-photo:nth-child(1) .button-photo-bg3 {
-    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+    background: url('attached_assets/blonde.png') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(2) .button-photo-bg3 {
-    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+    background: url('attached_assets/dark.png') center/cover no-repeat;
 }
 .photo-overlay {
     position: absolute;
