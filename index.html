@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Dark Theme Website" data-bg="Тъмна тема уебсайт">Dark Theme Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Hamburger Menu -->
+        <div class="menu-container">
+            <button id="menuBtn" class="menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+
+        <!-- Header Controls -->
+        <div class="header-controls">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="langBtn" class="lang-btn">
+                    <i data-feather="globe"></i>
+                    <span id="currentLang">EN</span>
+                </button>
+                <div id="langDropdown" class="lang-dropdown">
+                    <button onclick="switchLanguage('en')" class="lang-option">English</button>
+                    <button onclick="switchLanguage('bg')" class="lang-option">Български</button>
+                </div>
+            </div>
+
+            <!-- Google Rating Button -->
+           <div class="rating-section">
+                <a href="https://www.google.com/search?q=rate+us" target="_blank" class="google-rating-btn">
+                    <i data-feather="star"></i>
+                    <span data-en="Rate us" data-bg="Оценете ни"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slide-out Menu -->
+    <div id="slideMenu" class="slide-menu">
+        <div class="slide-menu-content">
+            <div class="menu-header">
+                <h3 data-en="Navigation" data-bg="Навигация">Navigation</h3>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            
+            <nav class="menu-nav">
+                <div class="menu-section">
+                    <h4 data-en="Main Pages" data-bg="Основни страници">Main Pages</h4>
+                    <ul class="menu-items">
+                        <li><a href="index.html" class="menu-item" data-en="Home" data-bg="Начало">Home</a></li>
+                        <li>
+                            <button class="menu-item expandable" data-en="Food" data-bg="Храна">
+                                <span></span>
+                                <span class="dropdown-arrow">▼</span>
+                            </button>
+                            <ul class="submenu">
+                                <li><a href="page1.html#web-dev" class="submenu-item" data-en="Salads" data-bg="Салати"></a></li>
+                                <li><a href="page1.html#mobile-apps" class="submenu-item" data-en="Mobile Apps" data-bg="Безмесни"></a></li>
+                                <li><a href="page1.html#marketing" class="submenu-item" data-en="Digital Marketing" data-bg="Ястия с пилешко"></a></li>  
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Ястия със свинско"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Ястия с телешко"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Барбекю"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Ястия с риба"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Пица"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Паста"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Ризото"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Сачове"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="В керемида"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Пърленки"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Сандвичи"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Добавки"></a></li>
+                                <li><a href="page1.html#security" class="submenu-item" data-en="Security Solutions" data-bg="Алергени"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="menu-item expandable" data-en="About Us" data-bg="За нас">
+                                <span>About Us</span>
+                                <span class="dropdown-arrow">▼</span>
+                            </button>
+                            <ul class="submenu">
+                                <li><a href="page2.html#mission" class="submenu-item" data-en="Our Mission" data-bg="Нашата мисия">Our Mission</a></li>
+                                <li><a href="page2.html#team" class="submenu-item" data-en="Our Team" data-bg="Нашият екип">Our Team</a></li>
+                                <li><a href="page2.html#contact" class="submenu-item" data-en="Contact Us" data-bg="Свържете се с нас">Contact Us</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+            <!-- Menu Overlay -->
+            <div id="menuOverlay" class="menu-overlay"></div>
+
+
+    <!-- Hero Image -->
+    <div class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="main-title" data-en="Glineni Garneta" data-bg="Глинени Гърнета"></h1>
+            </div>
+        </div>
+    </div>
+
+    <main class="main-content">
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-section">
+            <div class="nav-button-container">
+                <a href="page1.html" class="nav-button-photo">
+                    <div class="button-photo-bg">
+                        <div class="photo-overlay"></div>
+                        <div class="button-text">
+                            <h3 data-en="Food" data-bg="Храна"></h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="page2.html" class="nav-button-photo">
+                    <div class="button-photo-bg">
+                        <div class="photo-overlay"></div>
+                        <div class="button-text">
+                            <h3 data-en="Drinks" data-bg="Напитки"></h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="page3.html" class="nav-button-photo">
+                    <div class="button-photo-bg">
+                        <div class="photo-overlay"></div>
+                        <div class="button-text">
+                            <h3 data-en="Hookahs" data-bg="Наргилета"></h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p data-en="© 2025 All rights reserved" data-bg="© 2025 Всички права запазени">© 2025 All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+</body>
+</html>
