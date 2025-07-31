@@ -200,7 +200,7 @@ body {
 }
 
 .submenu.expanded {
-    max-height: 300px;
+    max-height: 700px;
 }
 
 .submenu-item {
@@ -449,7 +449,7 @@ body {
     background: url('attached_assets/food.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(2) .button-photo-bg {
-    background: url('attached_assets/drinks.jpeg') center/cover no-repeat;
+    background: url('attached_assets/drinks1.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(3) .button-photo-bg {
     background: url('attached_assets/IMG_2089.JPG') center/cover no-repeat;
@@ -544,7 +544,54 @@ body {
 .nav-button-photo:nth-child(16) .button-photo-bg1 {
     background: url('attached_assets/alergens.jpg') center/cover no-repeat;
 }
-
+.button-photo-bg2 {
+    position: relative;
+    height: 250px;
+    background: var(--gradient-bg);
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-button-photo:nth-child(1) .button-photo-bg2 {
+    background: url('attached_assets/bezalkoholni.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(2) .button-photo-bg2 {
+    background: url('attached_assets/coffee.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(3) .button-photo-bg2 {
+    background: url('attached_assets/toplinapitki.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(4) .button-photo-bg2 {
+    background: url('attached_assets/fresh.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(5) .button-photo-bg2 {
+    background: url('attached_assets/noalcoholcoctails.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(6) .button-photo-bg2 {
+    background: url('attached_assets/redbull.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(7) .button-photo-bg2 {
+    background: url('attached_assets/alcohol.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(8) .button-photo-bg2 {
+    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+}
+.button-photo-bg3 {
+    position: relative;
+    height: 250px;
+    background: var(--gradient-bg);
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-button-photo:nth-child(1) .button-photo-bg3 {
+    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(2) .button-photo-bg3 {
+    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+}
 .photo-overlay {
     position: absolute;
     top: 0;
