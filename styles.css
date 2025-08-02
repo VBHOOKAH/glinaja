@@ -965,9 +965,29 @@ body {
     flex: 1;
 }
 
-.item-allergens {
-    align-self: flex-end;
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-top: auto;
+    gap: 1rem;
+}
+
+.item-weight {
+    flex-shrink: 0;
+}
+
+.item-weight span {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    background: var(--bg-tertiary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.item-allergens {
+    flex-shrink: 0;
 }
 
 .item-allergens span {
