@@ -303,16 +303,19 @@ function initializeSlideMenu() {
         });
         
        
-        // Handle expandable menu items
-        const expandableItems = slideMenu.querySelectorAll('.expandable');
-        expandableItems.forEach(item => {
-            item.addEventListener('click', function(e) {
+        // Handle dropdown buttons
+        const dropdownBtns = slideMenu.querySelectorAll('.menu-dropdown-btn');
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
                 e.preventDefault();
-                const submenu = item.nextElementSibling;
+                e.stopPropagation();
                 
-                if (submenu && submenu.classList.contains('submenu')) {
+                const container = btn.closest('li');
+                const submenu = container.querySelector('.submenu');
+                
+                if (submenu) {
                     // Toggle expanded state
-                    item.classList.toggle('expanded');
+                    btn.classList.toggle('expanded');
                     submenu.classList.toggle('expanded');
                 }
             });
@@ -329,10 +332,10 @@ function initializeSlideMenu() {
             });
         });
         
-        // Close menu when clicking regular menu items (navigation)
-        const regularMenuItems = slideMenu.querySelectorAll('.menu-item:not(.expandable)');
-        regularMenuItems.forEach(item => {
-            item.addEventListener('click', function() {
+        // Close menu when clicking menu links (navigation)
+        const menuLinks = slideMenu.querySelectorAll('.menu-item-link, .menu-item:not(.menu-dropdown-btn)');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
                 // Small delay to allow navigation to start
                 setTimeout(closeMenu, 100);
             });
