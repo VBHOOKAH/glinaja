@@ -860,6 +860,9 @@ body {
     transition: var(--transition);
     min-height: 200px;
 }
+.menu-item-card.no-image {
+    grid-template-columns: 1fr;
+}
 
 .menu-item-card:hover {
     transform: translateY(-2px);

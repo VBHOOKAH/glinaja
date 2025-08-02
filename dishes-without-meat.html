@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Services - Dark Theme Website" data-bg="Услуги - Тъмна тема уебсайт">Services - Dark Theme Website</title>
+    <title data-en="Salads - Dark Theme Website" data-bg="Салати - Тъмна тема уебсайт">Salads - Dark Theme Website</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
 </head>
@@ -34,7 +34,7 @@
             <div class="rating-section">
                 <a href="https://www.google.com/search?q=rate+us" target="_blank" class="google-rating-btn">
                     <i data-feather="star"></i>
-                    <span data-en="Rate us on Google" data-bg="Оценете ни в Google">Rate us on Google</span>
+                    <span data-en="Rate us" data-bg="Оценете ни">Rate us</span>
                 </a>
             </div>
         </div>
@@ -60,8 +60,8 @@
                                 <span class="dropdown-arrow">▼</span>
                             </button>
                             <ul class="submenu">
-                                <li><a href="salads.html" class="submenu-item" data-en="Salads" data-bg="Салати"></a></li>
-                                <li><a href="dishes-without-meat.html" class="submenu-item" data-en="Dishes without meat" data-bg="Безмесни ястия"></a></li>
+                                <li><a href="salads.html" class="submenu-item" data-en="Salads" data-bg="Салати">Salads</a></li>
+                                <li><a href="page1.html" class="submenu-item" data-en="Dishes without meat" data-bg="Безмесни ястия"></a></li>
                                 <li><a href="page1.html" class="submenu-item" data-en="Chicken dishes" data-bg="Ястия с пилешко"></a></li>  
                                 <li><a href="page1.html" class="submenu-item" data-en="Pork dishes" data-bg="Ястия със свинско"></a></li>
                                 <li><a href="page1.html" class="submenu-item" data-en="Beef dishes" data-bg="Ястия с телешко"></a></li>
@@ -115,143 +115,59 @@
 
     <main class="main-content">
         <div class="page-header">
-            <a href="index.html" class="back-btn">
-                
+            <a href="page1.html" class="back-btn">
+               
             </a>
-            <h1 data-en="Our Services" data-bg="Нашите предложения"></h1>
+            <h1 data-en="Salads" data-bg="Салати">Salads</h1>
         </div>
 
-        <div class="services-grid">
-            <div class="nav-button-container">
-                <a href="salads.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Salads" data-bg="Салати"></h3>
-                        </div>
+        <div class="items-container">
+            <div class="menu-item-card">
+                <div class="item-image-bg" style="background: url('attached_assets/salata.jpeg') center/cover no-repeat;">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Greek Salad" data-bg="Гръцка салата">Greek Salad</h3>
+                        <span class="item-price" data-en="12.50 лв" data-bg="12.50 лв">12.50 лв</span>
                     </div>
-                </a>
-                
-                <a href="dishes-without-meat.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Dishes without meat" data-bg="Безмесни ястия"></h3>
-                        </div>
+                    <p class="item-description" data-en="Fresh tomatoes, cucumbers, olives, feta cheese, red onion with olive oil dressing" data-bg="Пресни домати, краставици, маслини, сирене фета, червен лук с дресинг от зехтин">Fresh tomatoes, cucumbers, olives, feta cheese, red onion with olive oil dressing</p>
+                    <div class="item-allergens">
+                        <span data-en="Allergens: 7, 12" data-bg="Алергени: 7, 12">Allergens: 7, 12</span>
                     </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Chicken dishes" data-bg="Ястия с пилешко"></h3>
-                        </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card">
+                <div class="item-image-bg" style="background: url('attached_assets/salata.jpeg') center/cover no-repeat;">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Caesar Salad" data-bg="Цезар салата">Caesar Salad</h3>
+                        <span class="item-price" data-en="14.20 лв" data-bg="14.20 лв">14.20 лв</span>
                     </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Pork dishes" data-bg="Ястия със свинско"></h3>
-                        </div>
+                    <p class="item-description" data-en="Crispy lettuce, grilled chicken breast, parmesan cheese, croutons with caesar dressing" data-bg="Хрупкава зелена салата, пилешко филе на грил, пармезан, крутони с цезар дресинг">Crispy lettuce, grilled chicken breast, parmesan cheese, croutons with caesar dressing</p>
+                    <div class="item-allergens">
+                        <span data-en="Allergens: 1, 3, 7" data-bg="Алергени: 1, 3, 7">Allergens: 1, 3, 7</span>
                     </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Beef dishes" data-bg="Ястия с телешко"></h3>
-                        </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card">
+                <div class="item-image-bg" style="background: url('attached_assets/salata.jpeg') center/cover no-repeat;">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Shopska Salad" data-bg="Шопска салата">Shopska Salad</h3>
+                        <span class="item-price" data-en="9.80 лв" data-bg="9.80 лв">9.80 лв</span>
                     </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="BBQ" data-bg="Барбекю"></h3>
-                        </div>
+                    <p class="item-description" data-en="Traditional Bulgarian salad with tomatoes, cucumbers, peppers, onions and white cheese" data-bg="Традиционна българска салата с домати, краставици, чушки, лук и бяло сирене">Traditional Bulgarian salad with tomatoes, cucumbers, peppers, onions and white cheese</p>
+                    <div class="item-allergens">
+                        <span data-en="Allergens: 7" data-bg="Алергени: 7">Allergens: 7</span>
                     </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Fish dishes" data-bg="Ястия с риба"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Pizza" data-bg="Пица"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Pasta" data-bg="Паста"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Risotto" data-bg="Ризото"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Saches" data-bg="Сачове"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Dishes on a clay pot" data-bg="На керемида"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Flatbread" data-bg="Пърленки"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Sandwiches" data-bg="Сандвичи"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Suppliments" data-bg="Добавки"></h3>
-                        </div>
-                    </div>
-                </a>
-                <a href="page3.html" class="nav-button-photo">
-                    <div class="button-photo-bg1">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Allergens" data-bg="Алергени"></h3>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </main>
