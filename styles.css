@@ -6,7 +6,7 @@
 }
 
 :root {
-    --bg-primary: #0a0a0a;
+    --bg-primary: #121212;
     --bg-secondary: #1a1a1a;
     --bg-tertiary: #2a2a2a;
     --text-primary: #ffffff;
@@ -950,7 +950,7 @@ body {
 }
 
 .item-price {
-    color: var(--accent-primary);
+    color: #FC9F1C;
     font-size: 1.3rem;
     font-weight: 700;
     white-space: nowrap;

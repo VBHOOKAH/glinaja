@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Salads - Dark Theme Website" data-bg="Салати - Тъмна тема уебсайт">Salads - Dark Theme Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Hamburger Menu -->
+        <div class="menu-container">
+            <button id="menuBtn" class="menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+
+        <!-- Header Controls -->
+        <div class="header-controls">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="langBtn" class="lang-btn">
+                    <i data-feather="globe"></i>
+                    <span id="currentLang">EN</span>
+                </button>
+                <div id="langDropdown" class="lang-dropdown">
+                    <button onclick="switchLanguage('en')" class="lang-option">English</button>
+                    <button onclick="switchLanguage('bg')" class="lang-option">Български</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </header>
+
+    <!-- Slide-out Menu -->
+    <div id="slideMenu" class="slide-menu">
+        <div class="slide-menu-content">
+            <div class="menu-header">
+                <h3 data-en="Navigation" data-bg="Навигация">Navigation</h3>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            
+            <nav class="menu-nav">
+                <div class="menu-section">
+                    <ul class="menu-items">
+                        <li><a href="index.html" class="menu-item" data-en="Home" data-bg="Начало">Home</a></li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page1.html" class="menu-item-link" data-en="Food" data-bg="Храна">Food</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="salads.html" class="submenu-item" data-en="Salads" data-bg="Салати"></a></li>
+                                <li><a href="dishes-without-meat.html" class="submenu-item" data-en="Dishes without meat" data-bg="Безмесни ястия"></a></li>
+                                <li><a href="chicken.html" class="submenu-item" data-en="Chicken dishes" data-bg="Ястия с пилешко"></a></li>  
+                                <li><a href="pork.html" class="submenu-item" data-en="Pork dishes" data-bg="Ястия със свинско"></a></li>
+                                <li><a href="beef.html" class="submenu-item" data-en="Beef dishes" data-bg="Ястия с телешко"></a></li>
+                                <li><a href="bbq.html" class="submenu-item" data-en="BBQ" data-bg="Барбекю"></a></li>
+                                <li><a href="fish.html" class="submenu-item" data-en="Fish dishes" data-bg="Ястия с риба"></a></li>
+                                <li><a href="pizza.html" class="submenu-item" data-en="Pizza" data-bg="Пица"></a></li>
+                                <li><a href="pasta.html" class="submenu-item" data-en="Pasta" data-bg="Паста"></a></li>
+                                <li><a href="risotto.html" class="submenu-item" data-en="Risotto" data-bg="Ризото"></a></li>
+                                <li><a href="saches.html" class="submenu-item" data-en="Saches" data-bg="Сачове"></a></li>
+                                <li><a href="clay.html" class="submenu-item" data-en="Dishes on a clay tile" data-bg="В керемида"></a></li>
+                                <li><a href="bread.html" class="submenu-item" data-en="Flatbread" data-bg="Пърленки"></a></li>
+                                <li><a href="sandwich.html" class="submenu-item" data-en="Sandwiches" data-bg="Сандвичи"></a></li>
+                                <li><a href="supl.html" class="submenu-item" data-en="Suppliments" data-bg="Добавки"></a></li>
+                                <li><a href="allergens.html" class="submenu-item" data-en="Allergens" data-bg="Алергени"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page2.html" class="menu-item-link" data-en="Drinks" data-bg="Напитки">Drinks</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="page2.html" class="submenu-item" data-en="Soft drinks" data-bg="Безалкохолни"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Coffee" data-bg="Кафе"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Hot drinks" data-bg="Топли напитки"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Fresh" data-bg="Фрешове"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Non-alcoholic cocktails" data-bg="Безалкохолни коктейли"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Energy drinks" data-bg="Енергийни напитки"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Alcoholic beverages" data-bg="Алкохолни напитки"></a></li>
+                                <li><a href="page2.html" class="submenu-item" data-en="Lemonades" data-bg="Лимонади"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page3.html" class="menu-item-link" data-en="Hookahs" data-bg="Наргилета">Hookahs</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="page3.html" class="submenu-item" data-en="Blonde tobacco" data-bg="Жълт тютюн"></a></li>
+                                <li><a href="page3.html" class="submenu-item" data-en="Dark tobacco" data-bg="Черен тютюн"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+    <main class="main-content">
+        <div class="page-header">
+            <a href="page1.html" class="back-btn">
+               
+            </a>
+            <h1 data-en="Pizza" data-bg="Пица">Пица</h1>
+        </div>
+
+        <div class="items-container">
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Margherita" data-bg="Маргарита">Маргарита</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="tomato sauce and cheese" data-bg="доматен сос и кашкавал">доматен сос и кашкавал</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="400g" data-bg="400г">400г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Italiano" data-bg="Италиано">Италиано</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="fresh tomato, cheese, mozzarella, olive oil" data-bg="пресен домат, кашкавал, моцарела, зехтин">пресен домат, кашкавал, моцарела, зехтин</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Quattro Formaggi" data-bg="Куатро Формаджи">Куатро Формаджи</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="blue cheese, gouda, melted cheese, yellow cheese" data-bg="синьо сирене, гауда, топено сирене, кашкавал">синьо сирене, гауда, топено сирене, кашкавал</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Funghi" data-bg="Фунги">Фунги</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="mushrooms and yellow cheese" data-bg="гъби и кашкавал">гъби и кашкавал</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7, 17" data-bg="Алергени: 1, 7, 17">Алергени: 1, , 17</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Pescatore" data-bg="Пескатора">Пескатора</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="tuna, onion, spinach, olives" data-bg="риба тон, лук, спанак, маслини">риба тон, лук, спанак, маслини</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 4" data-bg="Алергени: 1, 4">Алергени: 1, 4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Polo" data-bg="Поло">Поло</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="chicken, peppers, melted cheese" data-bg="пиле, чушка, топено сирене">пиле, чушка, топено сирене</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Toscana" data-bg="Тоскана">Тоскана</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="ham, mushrooms" data-bg="шунка и гъби">шунка и гъби</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 17" data-bg="Алергени: 1, 17">Алергени: 1, 17</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Fiaba" data-bg="Фиаба">Фиаба</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="ham, bacon, melted cheese" data-bg="шунка, бекон, топено сирене">шунка, бекон, топено сирене</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Raffaello" data-bg="Рафаело">Рафаело</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="ham, bacon, melted cheese, mushrooms, olives, pickles" data-bg="шунка, бекон, топено сирене, гъби, маслини, кисели краставички">шунка, бекон, топено сирене, гъби, маслини, кисели краставички</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Milano" data-bg="Милано">Милано</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="lukanka salami, larded salami, bacon, fresh peppers, melted cheese" data-bg="луканка, шпеков салам, бекон, прясна чушка, топено сирене">луканка, шпеков салам, бекон, прясна чушка, топено сирене</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Diavola" data-bg="Диаволо">Диаволо</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="bacon, ham, mushrooms, hot peppers" data-bg="бекон, шунка, гъби, люта чушка">бекон, шунка, гъби, люта чушка</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 17" data-bg="Алергени: 1, 17">Алергени: 1, 17</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Clay pots" data-bg="Глинени гърнета">Глинени гърнета</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="chicken, ham, bacon, mushrooms, peppers, olives, melted cheese, egg" data-bg="пиле, шунка, бекон, гъби, чушка, маслини, топено сирене, яйце">пиле, шунка, бекон, гъби, чушка, маслини, топено сирене, яйце</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7, 17, 3" data-bg="Алергени: 1, 7, 17, 3">Алергени: 1, 7, 17, 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Capricciosa" data-bg="Капричоза">Капричоза</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="mushrooms, ham, melted cheese, egg" data-bg="гъби, шунка, топено сирене, яйце">гъби, шунка, топено сирене, яйце</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7, 17, 3" data-bg="Алергени: 1, 7, 17, 3">Алергени: 1, 7, 17, 3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Prosciutto and burrata" data-bg="Прошуто и бурата">Прошуто и бурата</h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="prosciutto, burrata" data-bg="прошуто, бурата">прошуто, бурата</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="500g" data-bg="500г">500г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Bambi (children's)" data-bg="Бамбина (детска)"></h3>
+                        <span class="item-price" data-en="10.99 лв / € 5.62" data-bg="10.99 лв / € 5.62">10.99 лв / € 5.62</span>
+                    </div>
+                    <p class="item-description" data-en="ham, melted cheese, french fries" data-bg="шунка, топено сирене, картофки">шунка, топено сирене, картофки</p>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="400g" data-bg="400г">400г</span>
+                        </div>
+                        <div class="item-allergens">
+                            <span data-en="Allergens: 1, 7" data-bg="Алергени: 1, 7">Алергени: 1, 7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p data-en="© 2025 All rights reserved" data-bg="© 2025 Всички права запазени">© 2025 All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+</body>
+</html>
