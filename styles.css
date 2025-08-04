@@ -38,7 +38,7 @@ body {
     align-items: center;
     padding: 1rem 2rem;
     background: transparent;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -582,7 +582,7 @@ body {
 
 /* Service button specific styling */
 .nav-button-photo:nth-child(1) .button-photo-bg {
-    background: url('attached_assets/food.jpg') center/cover no-repeat;
+    background: url('attached_assets/beef.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(2) .button-photo-bg {
     background: url('attached_assets/drinks1.jpg') center/cover no-repeat;

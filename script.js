@@ -1,5 +1,5 @@
 // Language switching functionality
-let currentLanguage = 'en';
+let currentLanguage = 'bg';
 
 // Initialize the application
 document.addEventListener('DOMContentLoaded', function() {
