@@ -375,7 +375,76 @@ body {
     align-items: center;
     justify-content: center;
 }
+/* Category Hero Images - Shorter version for submenu pages */
+.category-hero-image {
+    width: 100%;
+    height: 35vh;
+    background: url('attached_assets/salata.jpeg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.category-hero-image.chicken-hero {
+    background: url('attached_assets/chicken.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.pork-hero {
+    background: url('attached_assets/pork.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.beef-hero {
+    background: url('attached_assets/beef.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.bbq-hero {
+    background: url('attached_assets/bbq.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.fish-hero {
+    background: url('attached_assets/fish.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.pizza-hero {
+    background: url('attached_assets/pizza.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.pasta-hero {
+    background: url('attached_assets/pasta.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.risotto-hero {
+    background: url('attached_assets/risoto.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.saches-hero {
+    background: url('attached_assets/sach.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.clay-hero {
+    background: url('attached_assets/keremida.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.bread-hero {
+    background: url('attached_assets/purlenka.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.sandwich-hero {
+    background: url('attached_assets/clubs.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.supl-hero {
+    background: url('attached_assets/dobavka.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.nomeat-hero {
+    background: url('attached_assets/nomeat.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.allergens-hero {
+    background: url('attached_assets/alergens.jpg') center/cover no-repeat;
+}
 .hero-overlay {
     position: absolute;
     top: 0;
