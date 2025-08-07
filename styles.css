@@ -396,7 +396,7 @@ body {
     margin-top: 4.5rem;
 }
 .category-hero-content .main-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
@@ -548,7 +548,7 @@ body {
     max-width: 800px;
     padding: 2rem;
     position: relative;
-    margin-top: 16rem;
+    margin-top: 14rem;
     z-index: 3;
 }
 
@@ -579,7 +579,7 @@ body {
 }
 
 .main-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--text-primary);
     font-weight: 700;
