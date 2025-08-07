@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Whiskey" data-bg="Уиски">Уиски</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Hamburger Menu -->
+        <div class="menu-container">
+            <button id="menuBtn" class="menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+
+        <!-- Header Controls -->
+        <div class="header-controls">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="langBtn" class="lang-btn">
+                    <i data-feather="globe"></i>
+                    <span id="currentLang">EN</span>
+                </button>
+                <div id="langDropdown" class="lang-dropdown">
+                    <button onclick="switchLanguage('en')" class="lang-option">English</button>
+                    <button onclick="switchLanguage('bg')" class="lang-option">Български</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </header>
+
+    <!-- Slide-out Menu -->
+    <div id="slideMenu" class="slide-menu">
+        <div class="slide-menu-content">
+            <div class="menu-header">
+                <h3 data-en="Navigation" data-bg="Навигация">Navigation</h3>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            
+            <nav class="menu-nav">
+                <div class="menu-section">
+                    <ul class="menu-items">
+                        <li><a href="index.html" class="menu-item" data-en="Home" data-bg="Начало">Home</a></li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page1.html" class="menu-item-link" data-en="Food" data-bg="Храна">Food</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="salads.html" class="submenu-item" data-en="Salads" data-bg="Салати"></a></li>
+                                <li><a href="dishes-without-meat.html" class="submenu-item" data-en="Dishes without meat" data-bg="Безмесни ястия"></a></li>
+                                <li><a href="chicken.html" class="submenu-item" data-en="Chicken dishes" data-bg="Ястия с пилешко"></a></li>  
+                                <li><a href="pork.html" class="submenu-item" data-en="Pork dishes" data-bg="Ястия със свинско"></a></li>
+                                <li><a href="beef.html" class="submenu-item" data-en="Beef dishes" data-bg="Ястия с телешко"></a></li>
+                                <li><a href="bbq.html" class="submenu-item" data-en="BBQ" data-bg="Барбекю"></a></li>
+                                <li><a href="fish.html" class="submenu-item" data-en="Fish dishes" data-bg="Ястия с риба"></a></li>
+                                <li><a href="pizza.html" class="submenu-item" data-en="Pizza" data-bg="Пица"></a></li>
+                                <li><a href="pasta.html" class="submenu-item" data-en="Pasta" data-bg="Паста"></a></li>
+                                <li><a href="risotto.html" class="submenu-item" data-en="Risotto" data-bg="Ризото"></a></li>
+                                <li><a href="saches.html" class="submenu-item" data-en="Saches" data-bg="Сачове"></a></li>
+                                <li><a href="clay.html" class="submenu-item" data-en="Dishes on a clay tile" data-bg="В керемида"></a></li>
+                                <li><a href="bread.html" class="submenu-item" data-en="Flatbread" data-bg="Пърленки"></a></li>
+                                <li><a href="sandwich.html" class="submenu-item" data-en="Sandwiches" data-bg="Сандвичи"></a></li>
+                                <li><a href="supl.html" class="submenu-item" data-en="Suppliments" data-bg="Добавки"></a></li>
+                                <li><a href="allergens.html" class="submenu-item" data-en="Allergens" data-bg="Алергени"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page2.html" class="menu-item-link" data-en="Drinks" data-bg="Напитки">Drinks</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="bezalkoholni.html" class="submenu-item" data-en="Soft drinks" data-bg="Безалкохолни"></a></li>
+                                <li><a href="kafe.html" class="submenu-item" data-en="Coffee" data-bg="Кафе"></a></li>
+                                <li><a href="toplinapitki.html" class="submenu-item" data-en="Hot drinks" data-bg="Топли напитки"></a></li>
+                                <li><a href="fresh.html" class="submenu-item" data-en="Fresh" data-bg="Фрешове"></a></li>
+                                <li><a href="noalcoholcocktails.html" class="submenu-item" data-en="Non-alcoholic cocktails" data-bg="Безалкохолни коктейли"></a></li>
+                                <li><a href="energydrinks.html" class="submenu-item" data-en="Energy drinks" data-bg="Енергийни напитки"></a></li>
+                                <li><a href="alcohol.html" class="submenu-item" data-en="Alcoholic beverages" data-bg="Алкохолни напитки"></a></li>
+                                <li><a href="lemonade.html" class="submenu-item" data-en="Lemonades" data-bg="Лимонади"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page3.html" class="menu-item-link" data-en="Hookahs" data-bg="Наргилета">Hookahs</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="blonde.html" class="submenu-item" data-en="Blonde tobacco" data-bg="Жълт тютюн"></a></li>
+                                <li><a href="dark.html" class="submenu-item" data-en="Dark tobacco" data-bg="Черен тютюн"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+      <!-- Category Hero Image -->
+      <div class="category-hero-image whiskey-hero">
+        <div class="category-hero-overlay">
+            <div class="category-hero-content">
+                <h1 class="main-title" data-en="Whiskey" data-bg="Уиски">Уиски</h1>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <main class="main-content-drinks">
+       
+        <div class="items-container-drinks">
+            
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Red Label" data-bg="Johnnie Walker Red Label">Johnnie Walker Red Label</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Black Label" data-bg="Johnnie Walker Black Label">Johnnie Walker Black Label</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Double Black" data-bg="Johnnie Walker Double Black">Johnnie Walker Double Black</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Gold Label" data-bg="Johnnie Walker Gold Label">Johnnie Walker Gold Label</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Green Label" data-bg="Johnnie Walker Green Label">Johnnie Walker Green Label</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Swing" data-bg="Johnnie Walker Swing">Johnnie Walker Swing</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="15.00 BGN / € 7.67" data-bg="15.00 лв. / € 7.67">15.00 лв. / € 7.67</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker Black Ruby" data-bg="Johnnie Walker Black Ruby">Johnnie Walker Black Ruby</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="7.49 BGN / € 3.83" data-bg="7.49 лв. / € 3.83">7.49 лв. / € 3.83</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Johnnie Walker King George" data-bg="Johnnie Walker King George">Johnnie Walker King George</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="175.00 BGN / € 89.48" data-bg="175.00 лв. / € 89.48">175.00 лв. / € 89.48</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Bushmills" data-bg="Bushmills">Bushmills</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="4.99 BGN / € 2.55" data-bg="4.99 лв. / € 2.55">4.99 лв. / € 2.55</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Bushmills 10 yrs" data-bg="Bushmills 10 г.">Bushmills 10 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="6.69 BGN / € 3.42" data-bg="6.69 лв. / € 3.42">6.69 лв. / € 3.42</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Bushmills 12 yrs" data-bg="Bushmills 12 г.">Bushmills 12 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="10.00 BGN / € 5.11" data-bg="10.00 лв. / € 5.11">10.00 лв. / € 5.11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Bushmills 14 yrs" data-bg="Bushmills 14 г.">Bushmills 14 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="15.99 BGN / € 8.18" data-bg="15.99 лв. / € 8.18">15.99 лв. / € 8.18</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Jack Daniels" data-bg="Jack Daniels">Jack Daniels</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="6.99 BGN / € 3.57" data-bg="6.99 лв. / € 3.57">6.99 лв. / € 3.57</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Jack Daniels Single Barrel" data-bg="Jack Daniels Single Barrel">Jack Daniels Single Barrel</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="13.00 BGN / € 6.65" data-bg="13.00 лв. / € 6.65">13.00 лв. / € 6.65</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Chivas Regal 12 yrs" data-bg="Chivas Regal 12 г.">Chivas Regal 12 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="10.99 BGN / € 5.62" data-bg="10.99 лв. / € 5.62">10.99 лв. / € 5.62</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Chivas Regal 18 yrs" data-bg="Chivas Regal 18 г.">Chivas Regal 18 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="18.00 BGN / € 9.20" data-bg="18.00 лв. / € 9.20">18.00 лв. / € 9.20</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Ballantines" data-bg="Ballantines">Ballantines</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Ballantines 12 yrs" data-bg="Ballantines 12 г.">Ballantines 12 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="8.09 BGN / € 4.14" data-bg="8.09 лв. / € 4.14">8.09 лв. / € 4.14</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Four Roses" data-bg="Four Roses">Four Roses</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Four Roses Single Barrel" data-bg="Four Roses Single Barrel">Four Roses Single Barrel</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="12.00 BGN / € 6.14" data-bg="12.00 лв. / € 6.14">12.00 лв. / € 6.14</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Black Ram" data-bg="Black Ram">Black Ram</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="3.49 BGN / € 1.78" data-bg="3.49 лв. / € 1.78">3.49 лв. / € 1.78</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="J&B" data-bg="J&B">J&B</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Famous Grouse" data-bg="Famous Grouse">Famous Grouse</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Tullamore Dew" data-bg="Tullamore Dew">Tullamore Dew</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Jameson" data-bg="Jameson">Jameson</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Jim Beam" data-bg="Jim Beam">Jim Beam</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="5.99 BGN / € 3.06" data-bg="5.99 лв. / € 3.06">5.99 лв. / € 3.06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Cardhu" data-bg="Cardhu">Cardhu</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Singleton 12 yrs" data-bg="Singleton 12 г.">Singleton 12 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="10.00 BGN / € 5.11" data-bg="10.00 лв. / € 5.11">10.00 лв. / € 5.11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Royal Brackla 21 yrs" data-bg="Royal Brackla 21 г.">Royal Brackla 21 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="80.00 BGN / € 40.90" data-bg="80.00 лв. / € 40.90">80.00 лв. / € 40.90</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Glenfiddich 15 yrs" data-bg="Glenfiddich 15 г.">Glenfiddich 15 г.</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="14.00 BGN / € 7.16" data-bg="14.00 лв. / € 7.16">14.00 лв. / € 7.16</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Dimple" data-bg="Dimple">Dimple</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="10.99 BGN / € 5.62" data-bg="10.99 лв. / € 5.62">10.99 лв. / € 5.62</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item-card no-image">
+               
+                <div class="item-content">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="Connemara" data-bg="Connemara">Connemara</h3>
+                    </div>
+                    <div class="item-footer">
+                        <div class="item-weight">
+                            <span data-en="50 ml" data-bg="50 мл">50 мл</span>
+                        </div>
+                        <span class="item-price" data-en="7.00 BGN / € 3.58" data-bg="7.00 лв. / € 3.58">7.00 лв. / € 3.58</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p data-en="© 2025 Glineni Garneta. All rights reserved" data-bg="© 2025 Глинени Гърнета. Всички права запазени">© 2025 Glineni Garneta. All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+</body>
+</html>

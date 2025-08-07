@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Hot drinks" data-bg="Топли напитки">Топли напитки</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <!-- Hamburger Menu -->
+        <div class="menu-container">
+            <button id="menuBtn" class="menu-btn">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+
+        <!-- Header Controls -->
+        <div class="header-controls">
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button id="langBtn" class="lang-btn">
+                    <i data-feather="globe"></i>
+                    <span id="currentLang">EN</span>
+                </button>
+                <div id="langDropdown" class="lang-dropdown">
+                    <button onclick="switchLanguage('en')" class="lang-option">English</button>
+                    <button onclick="switchLanguage('bg')" class="lang-option">Български</button>
+                </div>
+            </div>
+
+            
+        </div>
+    </header>
+
+    <!-- Slide-out Menu -->
+    <div id="slideMenu" class="slide-menu">
+        <div class="slide-menu-content">
+            <div class="menu-header">
+                <h3 data-en="Navigation" data-bg="Навигация">Navigation</h3>
+                <button id="closeMenuBtn" class="close-menu-btn">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            
+            <nav class="menu-nav">
+                <div class="menu-section">
+                    <ul class="menu-items">
+                        <li><a href="index.html" class="menu-item" data-en="Home" data-bg="Начало">Home</a></li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page1.html" class="menu-item-link" data-en="Food" data-bg="Храна">Food</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="salads.html" class="submenu-item" data-en="Salads" data-bg="Салати"></a></li>
+                                <li><a href="dishes-without-meat.html" class="submenu-item" data-en="Dishes without meat" data-bg="Безмесни ястия"></a></li>
+                                <li><a href="chicken.html" class="submenu-item" data-en="Chicken dishes" data-bg="Ястия с пилешко"></a></li>  
+                                <li><a href="pork.html" class="submenu-item" data-en="Pork dishes" data-bg="Ястия със свинско"></a></li>
+                                <li><a href="beef.html" class="submenu-item" data-en="Beef dishes" data-bg="Ястия с телешко"></a></li>
+                                <li><a href="bbq.html" class="submenu-item" data-en="BBQ" data-bg="Барбекю"></a></li>
+                                <li><a href="fish.html" class="submenu-item" data-en="Fish dishes" data-bg="Ястия с риба"></a></li>
+                                <li><a href="pizza.html" class="submenu-item" data-en="Pizza" data-bg="Пица"></a></li>
+                                <li><a href="pasta.html" class="submenu-item" data-en="Pasta" data-bg="Паста"></a></li>
+                                <li><a href="risotto.html" class="submenu-item" data-en="Risotto" data-bg="Ризото"></a></li>
+                                <li><a href="saches.html" class="submenu-item" data-en="Saches" data-bg="Сачове"></a></li>
+                                <li><a href="clay.html" class="submenu-item" data-en="Dishes on a clay tile" data-bg="В керемида"></a></li>
+                                <li><a href="bread.html" class="submenu-item" data-en="Flatbread" data-bg="Пърленки"></a></li>
+                                <li><a href="sandwich.html" class="submenu-item" data-en="Sandwiches" data-bg="Сандвичи"></a></li>
+                                <li><a href="supl.html" class="submenu-item" data-en="Suppliments" data-bg="Добавки"></a></li>
+                                <li><a href="allergens.html" class="submenu-item" data-en="Allergens" data-bg="Алергени"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page2.html" class="menu-item-link" data-en="Drinks" data-bg="Напитки">Drinks</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="bezalkoholni.html" class="submenu-item" data-en="Soft drinks" data-bg="Безалкохолни"></a></li>
+                                <li><a href="kafe.html" class="submenu-item" data-en="Coffee" data-bg="Кафе"></a></li>
+                                <li><a href="toplinapitki.html" class="submenu-item" data-en="Hot drinks" data-bg="Топли напитки"></a></li>
+                                <li><a href="fresh.html" class="submenu-item" data-en="Fresh" data-bg="Фрешове"></a></li>
+                                <li><a href="noalcoholcocktails.html" class="submenu-item" data-en="Non-alcoholic cocktails" data-bg="Безалкохолни коктейли"></a></li>
+                                <li><a href="energydrinks.html" class="submenu-item" data-en="Energy drinks" data-bg="Енергийни напитки"></a></li>
+                                <li><a href="alcohol.html" class="submenu-item" data-en="Alcoholic beverages" data-bg="Алкохолни напитки"></a></li>
+                                <li><a href="lemonade.html" class="submenu-item" data-en="Lemonades" data-bg="Лимонади"></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
+                                <a href="page3.html" class="menu-item-link" data-en="Hookahs" data-bg="Наргилета">Hookahs</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="blonde.html" class="submenu-item" data-en="Blonde tobacco" data-bg="Жълт тютюн"></a></li>
+                                <li><a href="dark.html" class="submenu-item" data-en="Dark tobacco" data-bg="Черен тютюн"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Menu Overlay -->
+    <div id="menuOverlay" class="menu-overlay"></div>
+
+      <!-- Category Hero Image -->
+      <div class="category-hero-image toplinapitki-hero">
+        <div class="category-hero-overlay">
+            <div class="category-hero-content">
+                <h1 class="main-title" data-en="Hot drinks" data-bg="Топли напитки">Топли напитки</h1>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <main class="main-content-drinks">
+
+        <div class="services-grid">
+            <div class="nav-button-container">
+       
+       
+                <a href="kafe.html" class="nav-button-photo">
+            <div class="button-photo-bg4">
+                <div class="photo-overlay"></div>
+                <div class="button-text">
+                    <h3 data-en="Coffee" data-bg="Кафе">Кафе</h3>
+                </div>
+            </div>
+        </a>
+        <a href="mlqko.html" class="nav-button-photo">
+            <div class="button-photo-bg4">
+                <div class="photo-overlay"></div>
+                <div class="button-text">
+                    <h3 data-en="Milk drinks" data-bg="Мляко">Мляко</h3>
+                </div>
+            </div>
+        </a>
+        <a href="chocolate.html" class="nav-button-photo">
+            <div class="button-photo-bg4">
+                <div class="photo-overlay"></div>
+                <div class="button-text">
+                    <h3 data-en="Chocolate drinks" data-bg="Шоколад">Шоколад</h3>
+                </div>
+            </div>
+        </a>
+        <a href="tea.html" class="nav-button-photo">
+            <div class="button-photo-bg4">
+                <div class="photo-overlay"></div>
+                <div class="button-text">
+                    <h3 data-en="Tea" data-bg="Чай">Чай</h3>
+                </div>
+            </div>
+        </a>
+            
+                
+                
+               
+        </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p data-en="© 2025 Glineni Garneta. All rights reserved" data-bg="© 2025 Глинени Гърнета. Всички права запазени">© 2025 Glineni Garneta. All rights reserved</p>
+    </footer>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+</body>
+</html>
