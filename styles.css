@@ -541,6 +541,29 @@ body {
 .category-hero-image.rakia-hero {
     background: url('attached_assets/rakia.png') center/cover no-repeat;
 }
+.category-hero-image.wine-hero {
+    background: url('attached_assets/vino.jpg') center/cover no-repeat;
+}
+.category-hero-image.whitewine-hero {
+    background: url('attached_assets/whitewine.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.redwine-hero {
+    background: url('attached_assets/redwine.png') center/cover no-repeat;
+}
+
+.category-hero-image.rose-hero {
+    background: url('attached_assets/rosewine.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.sparklingwine-hero {
+    background: url('attached_assets/sparklingwine.jpg') center/cover no-repeat;
+}
+
+.category-hero-image.draftwine-hero {
+    background: url('attached_assets/draft.jpg') center/cover no-repeat;
+}
+
 
 
 
@@ -880,8 +903,30 @@ body {
     background: url('attached_assets/tequila.jpg') center/cover no-repeat;
 }
 
-
-
+.button-photo-bg-wine {
+    position: relative;
+    height: 250px;
+    background: var(--gradient-bg);
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-button-photo:nth-child(1) .button-photo-bg-wine {
+    background: url('attached_assets/whitewine.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(2) .button-photo-bg-wine {
+    background: url('attached_assets/rosewine.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(3) .button-photo-bg-wine {
+    background: url('attached_assets/redwine.png') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(4) .button-photo-bg-wine {
+    background: url('attached_assets/sparklingwine.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(5) .button-photo-bg-wine {
+    background: url('attached_assets/draft.jpg') center/cover no-repeat;
+}
 .photo-overlay {
     position: absolute;
     top: 0;
