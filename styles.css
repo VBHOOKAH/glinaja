@@ -532,6 +532,10 @@ body {
 .category-hero-image.fresh-hero {
     background: url('attached_assets/fresh.jpg') center/cover no-repeat;
 }
+.category-hero-image.noalcoholcocktails-hero {
+    background: url('attached_assets/noalcoholcoctails.jpg') center/cover no-repeat;
+}
+
 
 
 .hero-overlay {
