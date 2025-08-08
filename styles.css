@@ -529,6 +529,9 @@ body {
 .category-hero-image.cocktails-hero {
     background: url('attached_assets/coctails.jpg') center/cover no-repeat;
 }
+.category-hero-image.fresh-hero {
+    background: url('attached_assets/fresh.jpg') center/cover no-repeat;
+}
 
 
 .hero-overlay {
