@@ -535,6 +535,9 @@ body {
 .category-hero-image.noalcoholcocktails-hero {
     background: url('attached_assets/noalcoholcoctails.jpg') center/cover no-repeat;
 }
+.category-hero-image.lemonade-hero {
+    background: url('attached_assets/fabbri.png') center/cover no-repeat;
+}
 
 
 
