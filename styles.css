@@ -538,6 +538,9 @@ body {
 .category-hero-image.lemonade-hero {
     background: url('attached_assets/fabbri.png') center/cover no-repeat;
 }
+.category-hero-image.rakia-hero {
+    background: url('attached_assets/rakia.png') center/cover no-repeat;
+}
 
 
 
@@ -850,29 +853,33 @@ body {
     background: url('attached_assets/whiskey.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(6) .button-photo-bg-alcohol {
-    background: url('attached_assets/gin.jpg') center/cover no-repeat;
+    background: url('attached_assets/rakia.png') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(7) .button-photo-bg-alcohol {
-    background: url('attached_assets/rum.jpg') center/cover no-repeat;
-}
-.nav-button-photo:nth-child(8) .button-photo-bg-alcohol {
-    background: url('attached_assets/vermuth.png') center/cover no-repeat;
-}
-.nav-button-photo:nth-child(9) .button-photo-bg-alcohol {
-    background: url('attached_assets/liquor.jpg') center/cover no-repeat;
-}
-.nav-button-photo:nth-child(10) .button-photo-bg-alcohol {
-    background: url('attached_assets/brandy.jpg') center/cover no-repeat;
-}
-.nav-button-photo:nth-child(11) .button-photo-bg-alcohol {
     background: url('attached_assets/ouzo.jpg') center/cover no-repeat;
 }
+.nav-button-photo:nth-child(8) .button-photo-bg-alcohol {
+    background: url('attached_assets/gin.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(9) .button-photo-bg-alcohol {
+    background: url('attached_assets/rum.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(10) .button-photo-bg-alcohol {
+    background: url('attached_assets/vermuth.png') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(11) .button-photo-bg-alcohol {
+    background: url('attached_assets/liquor.jpg') center/cover no-repeat;
+}
 .nav-button-photo:nth-child(12) .button-photo-bg-alcohol {
-    background: url('attached_assets/menta.jpg') center/cover no-repeat;
+    background: url('attached_assets/brandy.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(13) .button-photo-bg-alcohol {
+    background: url('attached_assets/menta.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(14) .button-photo-bg-alcohol {
     background: url('attached_assets/tequila.jpg') center/cover no-repeat;
 }
+
 
 
 .photo-overlay {
