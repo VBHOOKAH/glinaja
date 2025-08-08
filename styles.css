@@ -563,6 +563,10 @@ body {
 .category-hero-image.draftwine-hero {
     background: url('attached_assets/draft.jpg') center/cover no-repeat;
 }
+.category-hero-image.cakes-hero {
+    background: url('attached_assets/dessert.jpg') center/cover no-repeat;
+}
+
 
 
 
@@ -692,9 +696,12 @@ body {
     background: url('attached_assets/beef.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(2) .button-photo-bg {
-    background: url('attached_assets/drinks1.jpg') center/cover no-repeat;
+    background: url('attached_assets/dessert.jpg') center/cover no-repeat;
 }
 .nav-button-photo:nth-child(3) .button-photo-bg {
+    background: url('attached_assets/drinks1.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(4) .button-photo-bg {
     background: url('attached_assets/IMG_2089.JPG') center/cover no-repeat;
 }
 
@@ -926,6 +933,22 @@ body {
 }
 .nav-button-photo:nth-child(5) .button-photo-bg-wine {
     background: url('attached_assets/draft.jpg') center/cover no-repeat;
+}
+
+.button-photo-bg-desserts {
+    position: relative;
+    height: 250px;
+    background: var(--gradient-bg);
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    overflow: hidden;
+}
+.nav-button-photo:nth-child(1) .button-photo-bg-desserts {
+    background: url('attached_assets/dessert.jpg') center/cover no-repeat;
+}
+.nav-button-photo:nth-child(2) .button-photo-bg-desserts {
+    background: url('attached_assets/icecream.jpg') center/cover no-repeat;
 }
 .photo-overlay {
     position: absolute;
@@ -1416,6 +1439,9 @@ body {
 
     .item-image-bg {
         height: 140px;
+    }
+    .item-image-bg-desserts {
+        height: 200px;
     }
 
     .item-content {
