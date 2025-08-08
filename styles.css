@@ -566,6 +566,9 @@ body {
 .category-hero-image.cakes-hero {
     background: url('attached_assets/dessert.jpg') center/cover no-repeat;
 }
+.category-hero-image.icecream-hero {
+    background: url('attached_assets/icecream.jpg') center/cover no-repeat;
+}
 
 
 
@@ -1245,7 +1248,14 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-
+.item-image-bg-desserts {
+    position: relative;
+    background: var(--gradient-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 .item-content {
     padding: 1.5rem;
     display: flex;
