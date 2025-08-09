@@ -344,6 +344,40 @@ function initializeSlideMenu() {
     
 }
 
+// Item dropdown toggle functionality
+function toggleItemDropdown(clickableElement) {
+    const dropdownMenu = clickableElement.closest('.menu-item-card').querySelector('.item-dropdown-menu');
+    const dropdownBtn = clickableElement.querySelector('.item-dropdown-btn');
+    const isActive = dropdownMenu.classList.contains('active');
+    
+    // Close all other dropdowns first
+    document.querySelectorAll('.item-dropdown-menu.active').forEach(menu => {
+        menu.classList.remove('active');
+    });
+    document.querySelectorAll('.item-dropdown-btn.active').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Toggle current dropdown
+    if (!isActive) {
+        dropdownMenu.classList.add('active');
+        dropdownBtn.classList.add('active');
+    }
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.menu-item-card')) {
+        document.querySelectorAll('.item-dropdown-menu.active').forEach(menu => {
+            menu.classList.remove('active');
+        });
+        document.querySelectorAll('.item-dropdown-btn.active').forEach(btn => {
+            btn.classList.remove('active');
+        });
+    }
+});
+
 // Export functions for potential external use
 window.switchLanguage = switchLanguage;
-window.currentLanguage = () => currentLanguage;
+window.currentLanguage = currentLanguage;
+window.toggleItemDropdown = toggleItemDropdown;

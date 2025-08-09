@@ -32,11 +32,11 @@
         </div>
     </header>
 
-    <!-- Slide-out Menu -->
+       <!-- Slide-out Menu -->
     <div id="slideMenu" class="slide-menu">
         <div class="slide-menu-content">
             <div class="menu-header">
-                <h3 data-en="Navigation" data-bg="Навигация">Navigation</h3>
+                <h3 data-en="Menu" data-bg="Меню">Меню</h3>
                 <button id="closeMenuBtn" class="close-menu-btn">
                     <i data-feather="x"></i>
                 </button>
@@ -74,6 +74,19 @@
                         </li>
                         <li>
                             <div class="menu-item-container">
+                                <a href="desserts.html" class="menu-item-link" data-en="Desserts" data-bg="Десерти">Десерти</a>
+                                <button class="menu-dropdown-btn">
+                                    <span class="dropdown-arrow">▼</span>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li><a href="torti.html" class="submenu-item" data-en="Cakes" data-bg="Торти"></a></li>
+                                <li><a href="sladoled.html" class="submenu-item" data-en="Ice Cream" data-bg="Сладолед"></a></li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="menu-item-container">
                                 <a href="page2.html" class="menu-item-link" data-en="Drinks" data-bg="Напитки">Drinks</a>
                                 <button class="menu-dropdown-btn">
                                     <span class="dropdown-arrow">▼</span>
@@ -92,14 +105,9 @@
                         <li>
                             <div class="menu-item-container">
                                 <a href="page3.html" class="menu-item-link" data-en="Hookahs" data-bg="Наргилета">Hookahs</a>
-                                <button class="menu-dropdown-btn">
-                                    <span class="dropdown-arrow">▼</span>
-                                </button>
+                                
                             </div>
-                            <ul class="submenu">
-                                <li><a href="blonde.html" class="submenu-item" data-en="Blonde tobacco" data-bg="Жълт тютюн"></a></li>
-                                <li><a href="dark.html" class="submenu-item" data-en="Dark tobacco" data-bg="Черен тютюн"></a></li>
-                            </ul>
+                            
                         </li>
                     </ul>
                 </div>
@@ -108,34 +116,314 @@
     </div>
     <!-- Menu Overlay -->
     <div id="menuOverlay" class="menu-overlay"></div>
-
-    <main class="main-content-index">
-        <div class="page-header">
-            <a href="index.html" class="back-btn">
-                
-            </a>
-            <h1 data-en="Our Services" data-bg="Нашите предложения"></h1>
+ 
+<!-- Category Hero Image -->
+<div class="category-hero-image nargile-hero">
+    <div class="category-hero-overlay">
+        <div class="category-hero-content">
+           <h1 class="main-title" data-en="Hookahs" data-bg="Наргилета">Наргилета</h3>
         </div>
-
-        <div class="services-grid">
-            <div class="nav-button-container">
-                <a href="page1.html" class="nav-button-photo">
-                    <div class="button-photo-bg3">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Blonde tobacco" data-bg="Жълт тютюн"></h3>
+    </div>
+</div>
+    <main class="main-content-index">
+            
+        <div class="items-container-drinks">
+            <h3 class="item-title" data-en="Blonde tobacco" data-bg="Жълт тютюн">Жълт тютюн</h3>
+            <div class="menu-item-card no-image">
+                <div class="item-content clickable-item" onclick="toggleItemDropdown(this)">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="O'S TOBACCO" data-bg="O'S TOBACCO">O'S TOBACCO</h3>
+                        
+                        <div class="item-dropdown-btn">
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item-footer">
+                        <span class="item-price" data-en="28.00 BGN / € 14.32" data-bg="28.00 лв. / € 14.32">28.00 лв. / € 14.32</span>
+                    </div>
+                   
+                   <div class="item-dropdown-menu">
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Disco" data-bg="Disco">Disco</h3>
+                            </div>
+                            <p class="item-description" data-en="peach" data-bg="праскова">праскова</p>
+                           
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Don Hookah" data-bg="Don Hookah">Don Hookah</h3>
+                            </div>
+                            <p class="item-description" data-en="dragon fruit" data-bg="драконов плод">драконов плод</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="African Queen" data-bg="African Queen">African Queen</h3>
+                            </div>
+                            <p class="item-description" data-en="mix of 16 red fruits" data-bg="микс от 16 червени плода">микс от 16 червени плода</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Bonnie & Clyde" data-bg="Bonnie & Clyde">Bonnie & Clyde</h3>
+                            </div>
+                            <p class="item-description" data-en="green apple" data-bg="зелена ябълка">зелена ябълка</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Unknown" data-bg="Unknown">Unknown</h3>
+                            </div>
+                            <p class="item-description" data-en="pear, lime, mint" data-bg="круша, лайм и мента">круша, лайм и мента</p>
+                            
                         </div>
                     </div>
-                </a>
-                <a href="page2.html" class="nav-button-photo">
-                    <div class="button-photo-bg3">
-                        <div class="photo-overlay"></div>
-                        <div class="button-text">
-                            <h3 data-en="Dark tobacco" data-bg="Черен тютюн"></h3>
-                        </div>
-                    </div>
-                </a>
+                </div>
             </div>
+            
+            <div class="menu-item-card no-image">
+                <div class="item-content clickable-item" onclick="toggleItemDropdown(this)">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="HOLSTER" data-bg="HOLSTER">HOLSTER</h3>
+                        
+                        <div class="item-dropdown-btn">
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item-footer">
+                       <span class="item-price" data-en="28.00 BGN / € 14.32" data-bg="28.00 лв. / € 14.32">28.00 лв. / € 14.32</span>
+                    </div>
+                   
+                    <div class="item-dropdown-menu">
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Watermill Punch" data-bg="Watermill Punch">Watermill Punch</h3>
+                            </div>
+                            <p class="item-description" data-en="watermellon with mint" data-bg="диня с мента">диня с мента</p>
+                           
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Miss Joosy" data-bg="Miss Joosy">Miss Joosy</h3>
+                            </div>
+                            <p class="item-description" data-en="strawberry and raspberry" data-bg="малина и ягода">малина и ягода</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Ice Kaktuz" data-bg="Ice Kaktuz">Ice Kaktuz</h3>
+                            </div>
+                            <p class="item-description" data-en="Kaktus" data-bg="Кактус">Кактус</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Ice Finger" data-bg="Ice Finger">Ice Finger</h3>
+                            </div>
+                            <p class="item-description" data-en="Lemon, lime and raspberry" data-bg="Лимон, лайм и малина">Лимон, лайм и малина</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Grape Mint" data-bg="Grape Mint">Grape Mint</h3>
+                            </div>
+                            <p class="item-description" data-en="grape with mint" data-bg="грозде с мента">грозде с мента</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Pistacho" data-bg="Pistacho">Pistacho</h3>
+                            </div>
+                            <p class="item-description" data-en="pistachio" data-bg="шамфъстък">шамфъстък</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Bono" data-bg="Bono">Bono</h3>
+                            </div>
+                            <p class="item-description" data-en="chocolate with hazelnut" data-bg="шоколад с лешник">шоколад с лешник</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="item-title" data-en="Dark tobacco" data-bg="Черен тютюн">Черен тютюн</h3>
+        <div class="menu-item-card no-image">
+                <div class="item-content clickable-item" onclick="toggleItemDropdown(this)">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="DARKSIDE" data-bg="DARKSIDE">DARKSIDE</h3>
+                        
+                        <div class="item-dropdown-btn">
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item-footer">
+                        <span class="item-price" data-en="33.00 BGN / € 16.87" data-bg="33.00 лв. / € 16.87">33.00 лв. / € 16.87</span>
+                    </div>
+                   
+                    <div class="item-dropdown-menu">
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Bananapapa" data-bg="Bananapapa">Bananapapa</h3>
+                            </div>
+                            <p class="item-description" data-en="banana" data-bg="банан">банан</p>
+                           
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Bassberry" data-bg="Bassberry">Bassberry</h3>
+                            </div>
+                            <p class="item-description" data-en="elderberry" data-bg="бъз">бъз</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Wild Forest" data-bg="Wild Forest">Wild Forest</h3>
+                            </div>
+                            <p class="item-description" data-en="wild berries" data-bg="горски плодове">горски плодове</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Blackberry" data-bg="Blackberry">Blackberry</h3>
+                            </div>
+                            <p class="item-description" data-en="blackberry" data-bg="къпина">къпина</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Polar Cream" data-bg="Polar Cream">Polar Cream</h3>
+                            </div>
+                            <p class="item-description" data-en="ice cream with pistachio" data-bg="сладолед с шамфъстък">сладолед с шамфъстък</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Lemonblast" data-bg="Lemonblast">Lemonblast</h3>
+                            </div>
+                            <p class="item-description" data-en="lemon" data-bg="лимон">лимон</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Crystal Grape" data-bg="Crystal Grape">Crystal Grape</h3>
+                            </div>
+                            <p class="item-description" data-en="grape" data-bg="грозде">грозде</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Pineapple Pulse" data-bg="Pineapple Pulse">Pineapple Pulse</h3>
+                            </div>
+                            <p class="item-description" data-en="pineapple" data-bg="ананас">ананас</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Virgin Peach" data-bg="Virgin Peach">Virgin Peach</h3>
+                            </div>
+                            <p class="item-description" data-en="peach" data-bg="праскова">праскова</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Dark Passion" data-bg="Dark Passion">Dark Passion</h3>
+                            </div>
+                            <p class="item-description" data-en="passion fruit" data-bg="маракуя">маракуя</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Cola" data-bg="Cola">Cola</h3>
+                            </div>
+                            <p class="item-description" data-en="cola" data-bg="кола">кола</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Blueberry Blast" data-bg="Blueberry Blast">Blueberry Blast</h3>
+                            </div>
+                            <p class="item-description" data-en="blueberry" data-bg="боровинка">боровинка</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="C.R.E.A.M. S.O.D.A." data-bg="C.R.E.A.M. S.O.D.A.">C.R.E.A.M. S.O.D.A.</h3>
+                            </div>
+                            <p class="item-description" data-en="soda with vanilla hint" data-bg="сода с нотка на ванилия">сода с нотка на ванилия</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Supernova" data-bg="Supernova">Supernova</h3>
+                            </div>
+                            <p class="item-description" data-en="ice effect" data-bg="ледена свежест">ледена свежест</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-item-card no-image">
+                <div class="item-content clickable-item" onclick="toggleItemDropdown(this)">
+                    <div class="item-header">
+                        <h3 class="item-title" data-en="MUSTHAVE" data-bg="MUSTHAVE">MUSTHAVE</h3>
+                        
+                        <div class="item-dropdown-btn">
+                            <span class="dropdown-arrow">▼</span>
+                        </div>
+                        
+                    </div>
+                    <div class="item-footer">
+                        <span class="item-price" data-en="33.00 BGN / € 16.87" data-bg="33.00 лв. / € 16.87">33.00 лв. / € 16.87</span>
+                    </div>
+                   
+                    <div class="item-dropdown-menu">
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Pinkman" data-bg="Pinkman">Pinkman</h3>
+                            </div>
+                            <p class="item-description" data-en="raspberry, grapefruit and strawberry" data-bg="малина, грейпфрут, ягода">малина, грейпфрут, ягода</p>
+                           
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Rocketman" data-bg="Rocketman">Rocketman</h3>
+                            </div>
+                            <p class="item-description" data-en="strawberry soda, kiwi and grapefruit" data-bg="ягодова сода, киви и грейпфрут">ягодова сода, киви и грейпфрут</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Strawberry lychee" data-bg="Strawberry lychee">Strawberry lychee</h3>
+                            </div>
+                            <p class="item-description" data-en="strawberry and lychee" data-bg="ягода и личи">ягода и личи</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Tropic Juice" data-bg="Tropic Juice">Tropic Juice</h3>
+                            </div>
+                            <p class="item-description" data-en="pineapple and passion fruit" data-bg="ананас и маракуя">ананас и маракуя</p>
+                            
+                        </div>
+                        <div class="dropdown-item">
+                            <div class="item-header">
+                                <h3 class="item-title" data-en="Mad Pear" data-bg="Mad Pear">Mad Pear</h3>
+                            </div>
+                            <p class="item-description" data-en="pear" data-bg="круша">круша</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            
         </div>
     </main>
 
