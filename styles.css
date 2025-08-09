@@ -1678,6 +1678,16 @@ a:focus {
     margin-bottom: 0.5rem;
 }
 
+.item-price-section {
+    margin-bottom: 0.75rem;
+}
+
+.item-price-section .item-price {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
 .clickable-item {
     cursor: pointer;
     transition: var(--transition);
